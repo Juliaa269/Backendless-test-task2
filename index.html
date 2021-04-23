@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>Test task 2</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="header color" id="header">
+                <h2 class="header__title">Backendless</h2>
+                <div class="header__select">
+                    <select id="select">
+                        <option value="light">Light Theme</option>
+                        <option value="dark" selected>Dark Theme</option>
+                        <option value="backendless">Backendless Theme</option>
+                    </select>
+                </div>
+                <div class="header__radio">
+                    <input type="radio" value="light" name='radio' id="radio-light" onclick=changeCssLight()>
+                    <label for="radio-light">Light Theme</label>
+                    <input type="radio" value="dark" name='radio' id="radio-dark" onclick=changeCssDark() checked>
+                    <label for="radio-dark">Dark Theme</label>
+                    <input type="radio" value="backendless" name='radio' id="radio-backendless" onclick=changeCssBackendless()>
+                    <label for="radio-backendless">Backendless Theme</label>
+                </div>
+        
+                <div class="header__buttons">
+                    <input type="button" value="Light Theme" onclick=changeCssLight()>
+                    <input type="button" value="Dark Theme" onclick=changeCssDark() checked>
+                    <input type="button" value="Backendless Theme" onclick=changeCssBackendless()>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <h1 class="main__title">backendless gallery</h1>
+            <section class="main__section">
+                <div class="img1"><img src="./images/1000x600.png" alt="image"></div>
+                <div class="img2"><img src="./images/1000x600.png" alt="image"></div>
+                <div class="img3"><img src="./images/1000x600.png" alt="image"></div>
+                <div class="img4"><img src="./images/1000x600.png" alt="image"></div>
+                <div class="img5"><img src="./images/1000x600.png" alt="image"></div>
+                <div class="img6"><img src="./images/1000x600.png" alt="image"></div>
+                <div class="img7"><img src="./images/1000x600.png" alt="image"></div>
+                <div class="img8"><img src="./images/1000x600.png" alt="image"></div>
+                <div class="img9"><img src="./images/1000x600.png" alt="image"></div>
+                <div class="img10"><img src="./images/1000x600.png" alt="image"></div>
+                <div class="img11"><img src="./images/1000x600.png" alt="image"></div>
+                <div class="img12"><img src="./images/1000x600.png" alt="image"></div>
+                
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer__wrapper wrapper">
+            <div class="footer color">
+                <div class="footer__contacts">
+                    <a class="footer__contacts-item1" href="https://backendless.com" target="_blank">Backendless.com</a>
+                    <a class="footer__contacts-item2" href="tel:555555555">555-555-555</a>
+                </div>
+                <div class="footer__socials-dark">
+                    <a href="https://www.instagram.com/?hl=ru" target="_blank" class="fa fa-instagram fa-2x work"></a>
+                    <a href="https://www.facebook.com/?hl=ru" target="_blank" class="fa fa-facebook fa-2x work"></a>
+                    <a href="https://www.twitter.com/?hl=ru" target="_blank" class="fa fa-twitter fa-2x work"></a>
+                    <a href="https://telegram.im/@backendless" target="_blank" class="fa fa-telegram fa-2x work"></a>
+                    <a href="https://www.youtube.com/?hl=ru" target="_blank" class="fa fa-youtube fa-2x work"></a>
+                    <a href="https://www.vk.com/?hl=ru" target="_blank" class="fa fa-vk fa-2x work"></a>
+                    <a href="https://mail.google.com/?hl=ru" target="_blank" class="fa fa-envelope fa-2x work"></a>
+                </div>
+                <div class="footer__socials-light">
+                    <a href="https://www.instagram.com/?hl=ru" target="_blank" class="fa fa-instagram fa-2x work"></a>
+                    <a href="https://www.facebook.com/?hl=ru" target="_blank" class="fa fa-facebook fa-2x work"></a>
+                    <a href="https://www.twitter.com/?hl=ru" target="_blank" class="fa fa-twitter fa-2x work"></a>
+                    <a href="https://telegram.im/@backendless" target="_blank" class="fa fa-telegram fa-2x work"></a>
+                    <a href="https://www.youtube.com/?hl=ru" target="_blank" class="fa fa-youtube fa-2x work"></a>
+                    <a href="https://www.vk.com/?hl=ru" target="_blank" class="fa fa-vk fa-2x work"></a>
+                    <a href="https://mail.google.com/?hl=ru" target="_blank" class="fa fa-envelope fa-2x work"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="##" class="popup__close">X</a>
+                <div class="popup__title">Это модальное окно №1</div>
+                <div class="popup__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem rem debitis itaque ipsa dicta. Totam vitae sint ullam iusto quibusdam ex ea magni expedita nesciunt deserunt, porro dolorem! Suscipit, labore.
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
